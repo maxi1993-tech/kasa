@@ -1,0 +1,39 @@
+@use '../abstracts/variables' as *;
+@use "../abstracts/mixins" as *;
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: $footer-content-gap;
+    min-height: $footer-min-height;
+    background-color: $color-black;
+    color: $color-white;
+    text-align: center;
+
+    &__logo {
+        display: block;
+        width: $footer-logo-width;
+        height: auto;
+    }
+
+    &__text {
+        max-width: $footer-text-max-width-mobile;
+        font-size: $font-size-footer;
+    }
+
+    &__line-break {
+        display: block;
+    }
+
+    @include respond-to($breakpoint-desktop) {
+        &__text {
+            max-width: none;
+        }
+
+        &__line-break {
+            display: none;
+        }
+    }
+}

@@ -21,9 +21,9 @@ $about-banner-overlay: rgba(0, 0, 0, 0.3);
 $carousel-overlay: rgba(0, 0, 0, 0.3);
 
 $card-image-gradient: linear-gradient(180deg,
-                rgba(255, 255, 255, 0) 0%,
-                rgba(10, 10, 10, 0) 42%,
-                rgba(4, 4, 4, 0.41) 100%);
+        rgba(255, 255, 255, 0) 0%,
+        rgba(10, 10, 10, 0) 42%,
+        rgba(4, 4, 4, 0.41) 100%);
 
 
 // ---------------------------------------------------------
@@ -120,10 +120,12 @@ $header-navigation-gap: clamp(1.625rem, calc(0.943rem + 2.911vw), 3.5625rem);
 // FOOTER
 // ---------------------------------------------------------
 
+$footer-min-height: 13.0625rem;
 $footer-logo-width: 7.625rem;
-$footer-top-padding: 4.125rem;
+$footer-content-gap: 1.25rem;
 $footer-text-max-width-mobile: 8.375rem;
 
+$font-size-footer: clamp(0.75rem, calc(0.486rem + 1.127vw), 1.5rem);
 
 // ---------------------------------------------------------
 // BANNIÈRES
