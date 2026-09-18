@@ -1,0 +1,31 @@
+@use '../abstracts/variables' as *;
+@use "../abstracts/mixins" as *;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        width: $header-logo-width;
+    }
+
+    &__list {
+        display: flex;
+        gap: $header-navigation-gap;
+    }
+
+    &__link {
+        font-size: $font-size-navigation;
+        font-weight: $font-weight-medium;
+        text-transform: uppercase;
+
+        @include respond-to($breakpoint-desktop) {
+            text-transform: none;
+        }
+
+        &.active {
+            text-decoration: underline;
+        }
+    }
+}

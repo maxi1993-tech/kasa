@@ -1,0 +1,7 @@
+@use '../abstracts/variables' as *;
+
+@mixin respond-to($breakpoint-desktop) {
+    @media (min-width: $breakpoint-desktop) {
+        @content;
+    }
+}
