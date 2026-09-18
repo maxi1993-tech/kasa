@@ -9,5 +9,9 @@
     &__main {
         flex: 1;
         padding-inline: $page-horizontal-padding;
+
+        @include respond-to($breakpoint-desktop) {
+            padding: $main-padding-desktop;
+        }
     }
 }
