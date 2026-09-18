@@ -1,4 +1,6 @@
+@use '../abstracts/variables' as *;
+
 body {
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.426;
+    font-family: $font-family-primary;
+    line-height: $line-height-default;
 }
