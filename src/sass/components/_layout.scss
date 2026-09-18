@@ -1,0 +1,13 @@
+@use '../abstracts/variables' as *;
+@use "../abstracts/mixins" as *;
+
+.layout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    &__main {
+        flex: 1;
+        padding-inline: $page-horizontal-padding;
+    }
+}
