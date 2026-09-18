@@ -1,0 +1,184 @@
+// ---------------------------------------------------------
+// COULEURS
+// ---------------------------------------------------------
+
+$color-primary: #ff6060;
+$color-white: #ffffff;
+$color-black: #000000;
+$color-background-light: #f6f6f6;
+$color-background-light-transparent: rgba(246, 246, 246, 0.45);
+$color-rating-inactive: #e3e3e3;
+$color-host-placeholder: #c4c4c4;
+
+$home-banner-overlay: rgba(0, 0, 0, 0.6);
+$about-banner-overlay: rgba(0, 0, 0, 0.3);
+$carousel-overlay: rgba(0, 0, 0, 0.3);
+
+$card-image-gradient: linear-gradient(180deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(10, 10, 10, 0) 42%,
+        rgba(4, 4, 4, 0.41) 100%);
+
+
+// ---------------------------------------------------------
+// TYPOGRAPHIE
+// ---------------------------------------------------------
+
+$font-family-primary: "Montserrat", sans-serif;
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+$line-height-default: 1.426;
+$line-height-banner-mobile: 1;
+$letter-spacing-default: 0;
+
+$font-size-error-code: clamp(6rem, calc(1.775rem + 18.028vw), 18rem);
+
+$font-size-banner-title: clamp(1.5rem, calc(0.972rem + 2.254vw), 3rem);
+
+$font-size-housing-title: clamp(1.125rem, calc(0.729rem + 1.69vw), 2.25rem);
+
+$font-size-navigation: clamp(0.75rem, calc(0.486rem + 1.127vw), 1.5rem);
+
+$font-size-collapse-title: clamp(0.8125rem, calc(0.57rem + 1.033vw), 1.5rem);
+
+$font-size-body: clamp(0.75rem, calc(0.618rem + 0.563vw), 1.125rem);
+
+$font-size-location: clamp(0.875rem, calc(0.787rem + 0.376vw), 1.125rem);
+
+$font-size-tag: clamp(0.625rem, calc(0.537rem + 0.376vw), 0.875rem);
+
+$font-size-card-title: 1.125rem;
+
+
+// ---------------------------------------------------------
+// CONTENEURS
+// ---------------------------------------------------------
+
+$page-horizontal-padding: 1.25rem;
+
+$main-content-max-width: 77.5rem;
+$about-content-max-width: 63.9375rem;
+$housing-collapse-max-width: 36.375rem;
+$housing-card-max-width: 21.25rem;
+
+
+// ---------------------------------------------------------
+// ESPACEMENTS GÉNÉRAUX
+// ---------------------------------------------------------
+
+$page-top-padding: clamp(1.25rem, calc(0.7rem + 2.347vw), 2.8125rem);
+
+$page-main-gap: clamp(1.6875rem, calc(1.181rem + 2.16vw), 3.125rem);
+
+$home-banner-gallery-gap: clamp(1.375rem, calc(0.913rem + 1.972vw), 2.6875rem);
+
+$about-section-gap: clamp(1.1875rem, calc(0.769rem + 1.784vw), 2.375rem);
+
+$carousel-housing-info-gap: clamp(0.9375rem, calc(0.607rem + 1.408vw), 1.875rem);
+
+$housing-title-tags-gap: clamp(0.625rem, calc(0.405rem + 0.939vw), 1.25rem);
+
+$about-collapse-gap: clamp(1.25rem, calc(1.03rem + 0.939vw), 1.875rem);
+
+$error-page-content-gap: clamp(7.0625rem, calc(6.49rem + 2.441vw), 8.6875rem);
+
+$housing-details-row-gap: 1.25rem;
+$housing-details-column-gap-desktop: 4.75rem;
+
+
+// ---------------------------------------------------------
+// BORDURES ARRONDIES
+// ---------------------------------------------------------
+
+$border-radius-small: 0.3125rem;
+$border-radius-medium: 0.625rem;
+
+$border-radius-large: clamp(0.625rem, calc(0.295rem + 1.408vw), 1.5625rem);
+
+$border-radius-circle: 50%;
+
+
+// ---------------------------------------------------------
+// HEADER
+// ---------------------------------------------------------
+
+$header-logo-width: clamp(9.0625rem, calc(7.632rem + 6.103vw), 13.125rem);
+
+$header-navigation-gap: clamp(1.625rem, calc(0.943rem + 2.911vw), 3.5625rem);
+
+
+// ---------------------------------------------------------
+// FOOTER
+// ---------------------------------------------------------
+
+$footer-logo-width: 7.625rem;
+$footer-top-padding: 4.125rem;
+$footer-text-max-width-mobile: 8.375rem;
+
+
+// ---------------------------------------------------------
+// BANNIÈRES
+// ---------------------------------------------------------
+
+$banner-height: clamp(6.9375rem, calc(4.473rem + 10.516vw), 13.9375rem);
+
+$banner-title-max-width: 45.8125rem;
+$banner-title-horizontal-padding: 1rem;
+
+
+// ---------------------------------------------------------
+// GALERIE / CARTES ACCUEIL
+// ---------------------------------------------------------
+
+$housing-card-height: clamp(15.9375rem, calc(14.067rem + 7.981vw), 21.25rem);
+
+$housing-card-gap-mobile: 1.25rem;
+
+$housing-card-title-horizontal-padding: 1.25rem;
+
+$housing-card-title-bottom-position: clamp(0.9375rem, calc(0.827rem + 0.469vw), 1.25rem);
+
+$gallery-padding-desktop: 3.125rem;
+$gallery-column-gap-desktop: 3.75rem;
+$gallery-row-gap-desktop: 3.125rem;
+
+
+// ---------------------------------------------------------
+// FICHE LOGEMENT / CARROUSEL
+// ---------------------------------------------------------
+
+$carousel-height-mobile: 15.9375rem;
+$carousel-height-desktop: 25.9375rem;
+
+$carousel-counter-bottom-position-desktop: 1.5625rem;
+
+$host-avatar-size: clamp(2rem, calc(1.296rem + 3.005vw), 4rem);
+
+$host-name-avatar-gap: clamp(0.625rem, calc(0.71rem - 0.094vw), 0.6875rem);
+
+$rating-star-size-desktop: 2.25rem;
+$rating-star-gap-desktop: 0.25rem;
+
+$housing-tag-gap: 0.625rem;
+
+
+// ---------------------------------------------------------
+// COLLAPSE
+// ---------------------------------------------------------
+
+$collapse-header-min-height: clamp(1.875rem, calc(1.391rem + 2.066vw), 3.25rem);
+
+$collapse-header-horizontal-padding: clamp(0.625rem, calc(0.405rem + 0.939vw), 1.25rem);
+
+$collapse-content-horizontal-padding: 1.25rem;
+$collapse-content-vertical-padding: 1.25rem;
+
+
+// ---------------------------------------------------------
+// PAGE 404
+// ---------------------------------------------------------
+
+$error-message-max-width: clamp(16.25rem, calc(2.782rem + 57.465vw), 54.5rem);
