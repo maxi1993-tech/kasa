@@ -29,9 +29,9 @@ $about-banner-overlay: rgba(0, 0, 0, 0.3);
 $carousel-overlay: rgba(0, 0, 0, 0.3);
 
 $card-image-gradient: linear-gradient(180deg,
-                rgba(255, 255, 255, 0) 0%,
-                rgba(10, 10, 10, 0) 42%,
-                rgba(4, 4, 4, 0.41) 100%);
+        rgba(255, 255, 255, 0) 0%,
+        rgba(10, 10, 10, 0) 42%,
+        rgba(4, 4, 4, 0.41) 100%);
 
 
 // ---------------------------------------------------------
@@ -182,25 +182,24 @@ $banner-title-horizontal-padding: 1rem;
 
 // ---------------------------------------------------------
 // GALERIE / CARTES ACCUEIL
+// Mobile : une colonne, sans padding ni fond gris.
 // ---------------------------------------------------------
 
 // Figma : 255px → 340px
 $housing-card-height: clamp(15.9375rem, calc(14.0669rem + 7.981vw), 21.25rem);
-
-// Figma mobile : 22px (doublon de $gallery-row-gap à 375px, à retirer si inutilisé)
-$housing-card-gap-mobile: 1.375rem;
 
 $housing-card-title-horizontal-padding: 1.25rem;
 
 // Figma : 15px → 20px
 $housing-card-title-bottom-position: clamp(0.9375rem, calc(0.8275rem + 0.469vw), 1.25rem);
 
-$gallery-padding-desktop: 3.125rem;
+// Figma desktop : haut 56px ; côtés 50px ; bas 43px
+$gallery-padding-desktop: 3.5rem 3.125rem 2.6875rem;
 $gallery-column-gap-desktop: 3.75rem;
 $gallery-row-gap-desktop: 3.125rem;
 
-// Figma : 22px → 50px (50px repris de $gallery-row-gap-desktop, à confirmer)
-$gallery-row-gap: clamp(1.375rem, calc(0.7588rem + 2.629vw), 3.125rem);
+// Figma : 20px → 50px
+$gallery-row-gap: clamp(1.25rem, calc(0.5898rem + 2.817vw), 3.125rem);
 
 
 // ---------------------------------------------------------
