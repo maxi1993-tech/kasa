@@ -153,13 +153,9 @@ $header-logo-width: clamp(9.0625rem, calc(7.632rem + 6.103vw), 13.125rem);
 // la plus petite, la pente raide sous 375px, la pente Figma au-dessus.
 $header-navigation-gap: clamp(0.5rem, min(calc(0.9428rem + 2.911vw), calc(-6.0455rem + 32.727vw)), 3.5625rem);
 
-// À retirer quand _header.scss utilisera $header-padding
-$header-padding-mobile: 1.25rem 1.25rem 1.5625rem;
-$header-padding-desktop: 2.8125rem 6.25rem;
-
-// Figma : haut 20px → 45px ; côtés 20px → 100px ; bas 25px → 45px
+// Figma : haut 20px → 45px ; côtés 20px → 100px ; bas 27px → 50px
 // Adaptation 320px : côtés 16px
-$header-padding: clamp(1.25rem, calc(0.6998rem + 2.347vw), 2.8125rem) clamp(1rem, calc(-0.5106rem + 7.512vw), 6.25rem) clamp(1.5625rem, calc(1.1224rem + 1.878vw), 2.8125rem);
+$header-padding: clamp(1.25rem, calc(0.6998rem + 2.347vw), 2.8125rem) clamp(1rem, calc(-0.5106rem + 7.512vw), 6.25rem) clamp(1.6875rem, calc(1.1813rem + 2.16vw), 3.125rem);
 
 // ---------------------------------------------------------
 // FOOTER
