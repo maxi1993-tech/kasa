@@ -1,0 +1,37 @@
+@use '../abstracts/variables' as *;
+@use "../abstracts/mixins" as *;
+
+.banner {
+    display: flex;
+    align-items: center;
+    padding-left: 1.25rem;
+    min-height: $banner-height;
+    background-size: 165%;
+    background-position: 60% 47%;
+    border-radius: $border-radius-large;
+
+    @include respond-to($breakpoint-desktop) {
+        display: grid;
+        place-items: center;
+        padding-left: 0;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__title {
+        font-size: $font-size-banner-title;
+        font-weight: $font-weight-bold;
+        color: $color-white;
+        line-height: $line-height-banner-mobile;
+    }
+
+    &__title-end {
+        display: block;
+
+        @include respond-to($breakpoint-desktop) {
+            display: inline;
+        }
+    }
+
+
+}
