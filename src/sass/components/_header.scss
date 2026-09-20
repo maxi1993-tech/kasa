@@ -5,11 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: $header-padding-mobile;
-
-    @include respond-to($breakpoint-desktop) {
-        padding: $header-padding-desktop;
-    }
+    padding: $header-padding;
 
     &__logo {
         width: $header-logo-width;
