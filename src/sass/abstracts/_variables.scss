@@ -29,9 +29,9 @@ $about-banner-overlay: rgba(0, 0, 0, 0.3);
 $carousel-overlay: rgba(0, 0, 0, 0.3);
 
 $card-image-gradient: linear-gradient(180deg,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(10, 10, 10, 0) 42%,
-        rgba(4, 4, 4, 0.41) 100%);
+                rgba(255, 255, 255, 0) 0%,
+                rgba(10, 10, 10, 0) 42%,
+                rgba(4, 4, 4, 0.41) 100%);
 
 
 // ---------------------------------------------------------
@@ -200,6 +200,15 @@ $gallery-row-gap-desktop: 3.125rem;
 
 // Figma : 20px → 50px
 $gallery-row-gap: clamp(1.25rem, calc(0.5898rem + 2.817vw), 3.125rem);
+
+// Choix responsive : largeur minimale souhaitée avant de changer de ligne.
+$gallery-card-min-width: 17.5rem;
+
+// 375px → 1440px : padding 0 → valeurs desktop.
+$gallery-padding: clamp(0rem, calc(-1.2324rem + 5.2582vw), 3.5rem) clamp(0rem, calc(-1.1004rem + 4.6948vw), 3.125rem) clamp(0rem, calc(-0.9463rem + 4.0376vw), 2.6875rem);
+
+// 375px → 1440px : espacement horizontal 20px → 60px.
+$gallery-column-gap: clamp(1.25rem, calc(0.3697rem + 3.7559vw), 3.75rem);
 
 
 // ---------------------------------------------------------

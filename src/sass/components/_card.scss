@@ -1,0 +1,36 @@
+@use '../abstracts/variables' as *;
+
+.card {
+    &__link {
+        position: relative;
+        display: block;
+        height: $housing-card-height;
+        overflow: hidden;
+        border-radius: $border-radius-medium;
+
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: $card-image-gradient;
+            pointer-events: none;
+        }
+    }
+
+    &__cover {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__title {
+        position: absolute;
+        inset: auto 0 0;
+        z-index: 1;
+        padding: 0 $housing-card-title-horizontal-padding $housing-card-title-bottom-position;
+        color: $color-white;
+        font-size: $font-size-card-title;
+    }
+}

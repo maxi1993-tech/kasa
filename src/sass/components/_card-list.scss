@@ -1,0 +1,16 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.cardList {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(min(100%, $gallery-card-min-width), 1fr));
+    gap: $gallery-row-gap $gallery-column-gap;
+    padding: $gallery-padding;
+    margin-top: $home-banner-gallery-gap;
+
+    @include respond-to($breakpoint-desktop) {
+        background-color: $color-background-light;
+        border-radius: $border-radius-large;
+    }
+}
