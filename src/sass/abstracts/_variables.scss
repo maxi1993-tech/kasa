@@ -29,9 +29,9 @@ $about-banner-overlay: rgba(0, 0, 0, 0.3);
 $carousel-overlay: rgba(0, 0, 0, 0.3);
 
 $card-image-gradient: linear-gradient(180deg,
-                rgba(255, 255, 255, 0) 0%,
-                rgba(10, 10, 10, 0) 42%,
-                rgba(4, 4, 4, 0.41) 100%);
+        rgba(255, 255, 255, 0) 0%,
+        rgba(10, 10, 10, 0) 42%,
+        rgba(4, 4, 4, 0.41) 100%);
 
 
 // ---------------------------------------------------------
@@ -178,7 +178,13 @@ $banner-height: clamp(6.9375rem, calc(4.4727rem + 10.516vw), 13.9375rem);
 
 $banner-title-max-width: 45.8125rem;
 $banner-title-horizontal-padding: 1rem;
+// Accueil : largeur de l’image 552,75px → 1240px
+// entre 375px et 1440px, avec une base de 16px.
+$home-banner-background-size: clamp(34.5469rem,
+        calc(19.4225rem + 64.5305vw),
+        77.5rem);
 
+$home-banner-background-position: 60% 48%;
 
 // ---------------------------------------------------------
 // GALERIE / CARTES ACCUEIL
