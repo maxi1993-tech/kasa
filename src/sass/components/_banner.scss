@@ -10,6 +10,12 @@
     background-position: 60% 47%;
     border-radius: $border-radius-large;
 
+    @include respond-to(425px) {
+        justify-content: center;
+        padding-inline: 1.25rem;
+        text-align: center;
+    }
+
     @include respond-to($breakpoint-desktop) {
         display: grid;
         place-items: center;
@@ -32,6 +38,4 @@
             display: inline;
         }
     }
-
-
 }
