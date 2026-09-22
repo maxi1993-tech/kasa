@@ -1,0 +1,9 @@
+@use '../abstracts/variables' as *;
+
+.about-collapses {
+    display: flex;
+    flex-direction: column;
+    gap: $about-collapse-gap;
+    max-width: $about-content-max-width;
+    margin: 0 auto;
+}

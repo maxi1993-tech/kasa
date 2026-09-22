@@ -1,0 +1,43 @@
+@use '../abstracts/variables' as *;
+
+.collapse {
+
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        background-color: $color-primary;
+        min-height: $collapse-header-min-height;
+        padding: 0 $collapse-header-horizontal-padding;
+        border-radius: $border-radius-small;
+        color: $color-white;
+        font-size: $font-size-collapse-title;
+        font-weight: $font-weight-bold;
+    }
+
+    &__arrow {
+        transition: transform 200ms ease-out;
+    }
+
+    &__content {
+        max-height: 0;
+        overflow: hidden;
+        padding: 0 $collapse-content-horizontal-padding;
+        background-color: $color-background-light;
+        font-size: $font-size-body;
+        font-weight: $font-weight-regular;
+        transition:
+            max-height 200ms ease-out,
+            padding 200ms ease-out;
+    }
+
+    &--open &__content {
+        max-height: 1000px;
+        padding: $collapse-content-vertical-padding $collapse-content-horizontal-padding;
+    }
+
+    &--open &__arrow {
+        transform: rotate(-180deg);
+    }
+}
