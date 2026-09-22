@@ -29,9 +29,9 @@ $about-banner-overlay: rgba(0, 0, 0, 0.3);
 $carousel-overlay: rgba(0, 0, 0, 0.3);
 
 $card-image-gradient: linear-gradient(180deg,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(10, 10, 10, 0) 42%,
-        rgba(4, 4, 4, 0.41) 100%);
+                rgba(255, 255, 255, 0) 0%,
+                rgba(10, 10, 10, 0) 42%,
+                rgba(4, 4, 4, 0.41) 100%);
 
 
 // ---------------------------------------------------------
@@ -181,8 +181,8 @@ $banner-title-horizontal-padding: 1rem;
 // Accueil : largeur de l’image 552,75px → 1240px
 // entre 375px et 1440px, avec une base de 16px.
 $home-banner-background-size: clamp(34.5469rem,
-        calc(19.4225rem + 64.5305vw),
-        77.5rem);
+                calc(19.4225rem + 64.5305vw),
+                77.5rem);
 
 $home-banner-background-position: 60% 48%;
 
@@ -259,3 +259,16 @@ $collapse-content-vertical-padding: 1.25rem;
 
 // Figma : 260px → 872px
 $error-message-max-width: clamp(16.25rem, calc(2.7817rem + 57.465vw), 54.5rem);
+// Tailles fluides entre 375px et 1440px — base 16px.
+
+// « 404 » : 96px → 288px
+$font-size-error-code: clamp(6rem, calc(1.7746rem + 18.0282vw), 18rem);
+
+// Phrase : 18px → 36px
+$font-size-error-message: clamp(1.125rem, calc(0.7289rem + 1.6901vw), 2.25rem);
+
+// Lien : 14px → 18px
+$font-size-error-link: clamp(0.875rem, calc(0.787rem + 0.3756vw), 1.125rem);
+
+// Écart identique sur mobile et desktop : 139px
+$error-page-content-gap: 8.6875rem;

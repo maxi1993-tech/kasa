@@ -1,0 +1,28 @@
+@use '../abstracts/variables' as *;
+@use "../abstracts/mixins" as *;
+
+.not-found {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 139px;
+    color: $color-primary;
+    font-weight: $font-weight-medium;
+    margin-top: 110px;
+
+    &__title {
+        font-size: $font-size-error-code;
+        font-weight: $font-weight-bold;
+        line-height: $line-height-banner-mobile;
+    }
+
+    &__text {
+        font-size: $font-size-error-message;
+    }
+
+    &__link {
+        color: $color-black;
+        font-size: $font-size-error-link;
+        text-decoration: underline;
+    }
+}
