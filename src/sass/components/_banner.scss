@@ -10,6 +10,7 @@
     background-position: $home-banner-background-position;
     background-repeat: no-repeat;
     border-radius: $border-radius-large;
+    position: relative;
 
     @include respond-to(425px) {
         justify-content: center;
@@ -22,6 +23,7 @@
         font-weight: $font-weight-bold;
         color: $color-white;
         line-height: $line-height-banner-mobile;
+        position: relative;
     }
 
     &__title-end {
@@ -30,5 +32,17 @@
         @include respond-to($breakpoint-desktop) {
             display: inline;
         }
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: $home-banner-overlay;
+        border-radius: inherit;
+    }
+
+    &--about::before {
+        background: $about-banner-overlay;
     }
 }

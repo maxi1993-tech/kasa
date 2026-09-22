@@ -1,4 +1,6 @@
 import Collapse from "../components/Collapse"
+import Banner from "../components/Banner"
+import imgBanner from '../assets/banner-about.webp'
 
 const dataCollapses = [
     {
@@ -23,6 +25,7 @@ function About() {
 
     return (
         <>
+            <Banner page="about" title="À propos" image={imgBanner} />
             <div className="about-collapses">
                 {dataCollapses.map((collapse) => (
                     <Collapse key={collapse.title} title={collapse.title} description={collapse.description} />

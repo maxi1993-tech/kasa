@@ -1,8 +1,8 @@
-function Banner({ title, image }) {
+function Banner({ title, image, page }) {
 
     return (
-        <section className="banner" style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${image})` }}>
-            <h1 className="banner__title">{title}</h1>
+        <section className={page === "about" ? "banner banner--about" : "banner"} style={{ backgroundImage: `url(${image})` }}>
+            <h1 className={page === "about" ? "banner__title sr-only" : "banner__title"}>{title}</h1>
         </section>
     )
 }
