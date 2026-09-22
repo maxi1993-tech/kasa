@@ -1,7 +1,6 @@
 // ---------------------------------------------------------
 // BREAKPOINTS
 // ---------------------------------------------------------
-
 $breakpoint-desktop: 1440px;
 
 // ---------------------------------------------------------
@@ -15,260 +14,168 @@ $breakpoint-desktop: 1440px;
 // ---------------------------------------------------------
 // COULEURS
 // ---------------------------------------------------------
-
 $color-primary: #ff6060;
 $color-white: #ffffff;
 $color-black: #000000;
 $color-background-light: #f6f6f6;
 $color-background-light-transparent: rgba(246, 246, 246, 0.45);
-$color-rating-inactive: #e3e3e3;
-$color-host-placeholder: #c4c4c4;
-
-$home-banner-overlay: rgba(0, 0, 0, 0.6);
-$about-banner-overlay: rgba(0, 0, 0, 0.3);
-$carousel-overlay: rgba(0, 0, 0, 0.3);
-
-$card-image-gradient: linear-gradient(180deg,
-                rgba(255, 255, 255, 0) 0%,
-                rgba(10, 10, 10, 0) 42%,
-                rgba(4, 4, 4, 0.41) 100%);
-
 
 // ---------------------------------------------------------
 // TYPOGRAPHIE
 // Pas de réduction sous la taille mobile Figma.
 // ---------------------------------------------------------
-
 $font-family-primary: "Montserrat", sans-serif;
-
 $font-weight-regular: 400;
 $font-weight-medium: 500;
 $font-weight-bold: 700;
-
 $line-height-default: 1.426;
 $line-height-banner-mobile: 1;
-$letter-spacing-default: 0;
-
-// Figma : 96px → 288px
-$font-size-error-code: clamp(6rem, calc(1.7746rem + 18.028vw), 18rem);
-
-// Figma : 24px → 48px
-$font-size-banner-title: clamp(1.5rem, calc(0.9718rem + 2.254vw), 3rem);
-
-// Figma : 18px → 36px
-$font-size-housing-title: clamp(1.125rem, calc(0.7289rem + 1.69vw), 2.25rem);
-
-// Figma : 12px → 24px
-$font-size-navigation: clamp(0.75rem, calc(0.4859rem + 1.127vw), 1.5rem);
-
-// Figma : 13px → 24px
-$font-size-collapse-title: clamp(0.8125rem, calc(0.5704rem + 1.033vw), 1.5rem);
-
 // Figma : 12px → 18px
 $font-size-body: clamp(0.75rem, calc(0.618rem + 0.563vw), 1.125rem);
-
-// Figma : 14px → 18px
-$font-size-location: clamp(0.875rem, calc(0.787rem + 0.376vw), 1.125rem);
-
-// Figma : 10px → 14px
-$font-size-tag: clamp(0.625rem, calc(0.537rem + 0.376vw), 0.875rem);
-
-$font-size-card-title: 1.125rem;
-
-
-// ---------------------------------------------------------
-// CONTENEURS
-// ---------------------------------------------------------
-
-$page-horizontal-padding: 1.25rem;
-
-$main-content-max-width: 77.5rem;
-
-// À retirer quand _layout.scss utilisera $main-padding
-$main-padding-desktop: 0 6.25rem 3.125rem 6.25rem;
-
-// Figma : haut 0 ; côtés 20px → 100px ; bas 27px → 50px
-// Adaptation 320px : côtés 16px
-$main-padding: 0 clamp(1rem, calc(-0.5106rem + 7.512vw), 6.25rem) clamp(1.6875rem, calc(1.1813rem + 2.16vw), 3.125rem);
-
-$about-content-max-width: 63.9375rem;
-$housing-collapse-max-width: 36.375rem;
-$housing-card-max-width: 21.25rem;
-
-
-// ---------------------------------------------------------
-// ESPACEMENTS GÉNÉRAUX
-// ---------------------------------------------------------
-
-// Figma : 20px → 45px
-$page-top-padding: clamp(1.25rem, calc(0.6998rem + 2.347vw), 2.8125rem);
-
-// Figma : 27px → 50px
-$page-main-gap: clamp(1.6875rem, calc(1.1813rem + 2.16vw), 3.125rem);
-
-// Figma : 22px → 43px
-$home-banner-gallery-gap: clamp(1.375rem, calc(0.9129rem + 1.972vw), 2.6875rem);
-
-// Figma : 19px → 38px
-$about-section-gap: clamp(1.1875rem, calc(0.7694rem + 1.784vw), 2.375rem);
-
-// Figma : 15px → 30px
-$carousel-housing-info-gap: clamp(0.9375rem, calc(0.6074rem + 1.408vw), 1.875rem);
-
-// Figma : 10px → 20px
-$housing-title-tags-gap: clamp(0.625rem, calc(0.4049rem + 0.939vw), 1.25rem);
-
-// Figma : 20px → 30px
-$about-collapse-gap: clamp(1.25rem, calc(1.0299rem + 0.939vw), 1.875rem);
-
-// Figma : 113px → 139px
-$error-page-content-gap: clamp(7.0625rem, calc(6.4903rem + 2.441vw), 8.6875rem);
-
-$housing-details-row-gap: 1.25rem;
-$housing-details-column-gap-desktop: 4.75rem;
-
 
 // ---------------------------------------------------------
 // BORDURES ARRONDIES
 // ---------------------------------------------------------
-
 $border-radius-small: 0.3125rem;
 $border-radius-medium: 0.625rem;
-
 // Figma : 10px → 25px
 $border-radius-large: clamp(0.625rem, calc(0.2949rem + 1.408vw), 1.5625rem);
-
 $border-radius-circle: 50%;
-
 
 // ---------------------------------------------------------
 // HEADER
 // ---------------------------------------------------------
-
 // Figma : 145px → 210px
 $header-logo-width: clamp(9.0625rem, calc(7.632rem + 6.103vw), 13.125rem);
-
+// Figma : 12px → 24px
+$font-size-navigation: clamp(0.75rem, calc(0.4859rem + 1.127vw), 1.5rem);
 // Figma : 26px → 57px
 // Adaptation 320px : 8px, testé par Max. Deux pentes : min() prend
 // la plus petite, la pente raide sous 375px, la pente Figma au-dessus.
 $header-navigation-gap: clamp(0.5rem, min(calc(0.9428rem + 2.911vw), calc(-6.0455rem + 32.727vw)), 3.5625rem);
-
 // Figma : haut 20px → 45px ; côtés 20px → 100px ; bas 27px → 50px
 // Adaptation 320px : côtés 16px
 $header-padding: clamp(1.25rem, calc(0.6998rem + 2.347vw), 2.8125rem) clamp(1rem, calc(-0.5106rem + 7.512vw), 6.25rem) clamp(1.6875rem, calc(1.1813rem + 2.16vw), 3.125rem);
 
 // ---------------------------------------------------------
-// FOOTER
+// MAIN
 // ---------------------------------------------------------
-
-$footer-min-height: 13.0625rem;
-$footer-logo-width: 7.625rem;
-$footer-content-gap: 1.25rem;
-$footer-text-max-width-mobile: 8.375rem;
-
-// Figma : 12px → 24px
-$font-size-footer: clamp(0.75rem, calc(0.4859rem + 1.127vw), 1.5rem);
+// Figma : haut 0 ; côtés 20px → 100px ; bas 27px → 50px
+// Adaptation 320px : côtés 16px
+$main-padding: 0 clamp(1rem, calc(-0.5106rem + 7.512vw), 6.25rem) clamp(1.6875rem, calc(1.1813rem + 2.16vw), 3.125rem);
 
 // ---------------------------------------------------------
 // BANNIÈRES
 // ---------------------------------------------------------
-
 // Figma : 111px → 223px
 $banner-height: clamp(6.9375rem, calc(4.4727rem + 10.516vw), 13.9375rem);
-
-$banner-title-max-width: 45.8125rem;
-$banner-title-horizontal-padding: 1rem;
+// Figma : 24px → 48px
+$font-size-banner-title: clamp(1.5rem, calc(0.9718rem + 2.254vw), 3rem);
+$home-banner-overlay: rgba(0, 0, 0, 0.6);
+$about-banner-overlay: rgba(0, 0, 0, 0.3);
 // Accueil : largeur de l’image 552,75px → 1240px
 // entre 375px et 1440px, avec une base de 16px.
 $home-banner-background-size: clamp(34.5469rem,
                 calc(19.4225rem + 64.5305vw),
                 77.5rem);
-
 $home-banner-background-position: 60% 48%;
 
 // ---------------------------------------------------------
 // GALERIE / CARTES ACCUEIL
 // Mobile : une colonne, sans padding ni fond gris.
 // ---------------------------------------------------------
-
+// Figma : 22px → 43px
+$home-banner-gallery-gap: clamp(1.375rem, calc(0.9129rem + 1.972vw), 2.6875rem);
+// 375px → 1440px : padding 0 → valeurs desktop.
+$gallery-padding: clamp(0rem, calc(-1.2324rem + 5.2582vw), 3.5rem) clamp(0rem, calc(-1.1004rem + 4.6948vw), 3.125rem) clamp(0rem, calc(-0.9463rem + 4.0376vw), 2.6875rem);
+// 375px → 1440px : espacement horizontal 20px → 60px.
+$gallery-column-gap: clamp(1.25rem, calc(0.3697rem + 3.7559vw), 3.75rem);
+// Figma : 20px → 50px
+$gallery-row-gap: clamp(1.25rem, calc(0.5898rem + 2.817vw), 3.125rem);
+// Choix responsive : largeur minimale souhaitée avant de changer de ligne.
+$gallery-card-min-width: 17.5rem;
+$housing-card-max-width: 21.25rem;
 // Figma : 255px → 340px
 $housing-card-height: clamp(15.9375rem, calc(14.0669rem + 7.981vw), 21.25rem);
-
+$card-image-gradient: linear-gradient(180deg,
+                rgba(255, 255, 255, 0) 0%,
+                rgba(10, 10, 10, 0) 42%,
+                rgba(4, 4, 4, 0.41) 100%);
+$font-size-card-title: 1.125rem;
 $housing-card-title-horizontal-padding: 1.25rem;
-
 // Figma : 15px → 20px
 $housing-card-title-bottom-position: clamp(0.9375rem, calc(0.8275rem + 0.469vw), 1.25rem);
 
-// Figma desktop : haut 56px ; côtés 50px ; bas 43px
-$gallery-padding-desktop: 3.5rem 3.125rem 2.6875rem;
-$gallery-column-gap-desktop: 3.75rem;
-$gallery-row-gap-desktop: 3.125rem;
-
-// Figma : 20px → 50px
-$gallery-row-gap: clamp(1.25rem, calc(0.5898rem + 2.817vw), 3.125rem);
-
-// Choix responsive : largeur minimale souhaitée avant de changer de ligne.
-$gallery-card-min-width: 17.5rem;
-
-// 375px → 1440px : padding 0 → valeurs desktop.
-$gallery-padding: clamp(0rem, calc(-1.2324rem + 5.2582vw), 3.5rem) clamp(0rem, calc(-1.1004rem + 4.6948vw), 3.125rem) clamp(0rem, calc(-0.9463rem + 4.0376vw), 2.6875rem);
-
-// 375px → 1440px : espacement horizontal 20px → 60px.
-$gallery-column-gap: clamp(1.25rem, calc(0.3697rem + 3.7559vw), 3.75rem);
-
-
 // ---------------------------------------------------------
-// FICHE LOGEMENT / CARROUSEL
+// À PROPOS
 // ---------------------------------------------------------
-
-// Hauteurs fixes : contrainte du brief (galerie de hauteur constante)
-$carousel-height-mobile: 15.9375rem;
-$carousel-height-desktop: 25.9375rem;
-
-$carousel-counter-bottom-position-desktop: 1.5625rem;
-
-// Figma : 32px → 64px
-$host-avatar-size: clamp(2rem, calc(1.2958rem + 3.005vw), 4rem);
-
-// Figma : 11px → 10px (décroissant)
-$host-name-avatar-gap: clamp(0.625rem, calc(0.7095rem - 0.094vw), 0.6875rem);
-
-$rating-star-size-desktop: 2.25rem;
-$rating-star-gap-desktop: 0.25rem;
-
-$housing-tag-gap: 0.625rem;
-
+$about-content-max-width: 63.9375rem;
+// Figma : 19px → 38px
+$about-section-gap: clamp(1.1875rem, calc(0.7694rem + 1.784vw), 2.375rem);
+// Figma : 20px → 30px
+$about-collapse-gap: clamp(1.25rem, calc(1.0299rem + 0.939vw), 1.875rem);
 
 // ---------------------------------------------------------
 // COLLAPSE
 // ---------------------------------------------------------
-
 // Figma : 30px → 52px
 $collapse-header-min-height: clamp(1.875rem, calc(1.3908rem + 2.066vw), 3.25rem);
-
 // Figma : 10px → 20px
 $collapse-header-horizontal-padding: clamp(0.625rem, calc(0.4049rem + 0.939vw), 1.25rem);
-
+// Figma : 13px → 24px
+$font-size-collapse-title: clamp(0.8125rem, calc(0.5704rem + 1.033vw), 1.5rem);
 $collapse-content-horizontal-padding: 1.25rem;
 $collapse-content-vertical-padding: 1.25rem;
 
+// ---------------------------------------------------------
+// FICHE LOGEMENT / CARROUSEL
+// ---------------------------------------------------------
+// Hauteurs fixes : contrainte du brief (galerie de hauteur constante)
+$carousel-height-mobile: 15.9375rem;
+$carousel-height-desktop: 25.9375rem;
+$carousel-overlay: rgba(0, 0, 0, 0.3);
+$carousel-counter-bottom-position-desktop: 1.5625rem;
+// Figma : 15px → 30px
+$carousel-housing-info-gap: clamp(0.9375rem, calc(0.6074rem + 1.408vw), 1.875rem);
+// Figma : 18px → 36px
+$font-size-housing-title: clamp(1.125rem, calc(0.7289rem + 1.69vw), 2.25rem);
+// Figma : 14px → 18px
+$font-size-location: clamp(0.875rem, calc(0.787rem + 0.376vw), 1.125rem);
+// Figma : 10px → 20px
+$housing-title-tags-gap: clamp(0.625rem, calc(0.4049rem + 0.939vw), 1.25rem);
+// Figma : 10px → 14px
+$font-size-tag: clamp(0.625rem, calc(0.537rem + 0.376vw), 0.875rem);
+$housing-tag-gap: 0.625rem;
+// Figma : 32px → 64px
+$host-avatar-size: clamp(2rem, calc(1.2958rem + 3.005vw), 4rem);
+// Figma : 11px → 10px (décroissant)
+$host-name-avatar-gap: clamp(0.625rem, calc(0.7095rem - 0.094vw), 0.6875rem);
+$color-host-placeholder: #c4c4c4;
+$rating-star-size-desktop: 2.25rem;
+$rating-star-gap-desktop: 0.25rem;
+$color-rating-inactive: #e3e3e3;
+$housing-collapse-max-width: 36.375rem;
+$housing-details-row-gap: 1.25rem;
+$housing-details-column-gap-desktop: 4.75rem;
 
 // ---------------------------------------------------------
 // PAGE 404
 // ---------------------------------------------------------
-
-// Figma : 260px → 872px
-$error-message-max-width: clamp(16.25rem, calc(2.7817rem + 57.465vw), 54.5rem);
-// Tailles fluides entre 375px et 1440px — base 16px.
-
 // « 404 » : 96px → 288px
 $font-size-error-code: clamp(6rem, calc(1.7746rem + 18.0282vw), 18rem);
-
 // Phrase : 18px → 36px
 $font-size-error-message: clamp(1.125rem, calc(0.7289rem + 1.6901vw), 2.25rem);
-
+// Figma : 260px → 872px
+$error-message-max-width: clamp(16.25rem, calc(2.7817rem + 57.465vw), 54.5rem);
 // Lien : 14px → 18px
 $font-size-error-link: clamp(0.875rem, calc(0.787rem + 0.3756vw), 1.125rem);
 
-// Écart identique sur mobile et desktop : 139px
-$error-page-content-gap: 8.6875rem;
+// ---------------------------------------------------------
+// FOOTER
+// ---------------------------------------------------------
+$footer-min-height: 13.0625rem;
+$footer-logo-width: 7.625rem;
+$footer-content-gap: 1.25rem;
+$footer-text-max-width-mobile: 8.375rem;
+// Figma : 12px → 24px
+$font-size-footer: clamp(0.75rem, calc(0.4859rem + 1.127vw), 1.5rem);
