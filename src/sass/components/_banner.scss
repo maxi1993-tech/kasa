@@ -12,7 +12,7 @@
     border-radius: $border-radius-large;
     position: relative;
 
-    @include respond-to(425px) {
+    @include respond-to($breakpoint-mobile-large) {
         justify-content: center;
         padding-inline: 1.25rem;
         text-align: center;

@@ -19,7 +19,6 @@
     }
 
     &__text {
-        max-width: $footer-text-max-width-mobile;
         font-size: $font-size-footer;
     }
 
@@ -27,10 +26,7 @@
         display: block;
     }
 
-    @include respond-to($breakpoint-desktop) {
-        &__text {
-            max-width: none;
-        }
+    @include respond-to($breakpoint-mobile-large) {
 
         &__line-break {
             display: none;
