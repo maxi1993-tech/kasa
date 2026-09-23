@@ -1,26 +1,10 @@
 import imgBanner from '../assets/banner-home.webp'
 import Banner from "../components/Banner"
-import { useState, useEffect } from 'react'
+import useFetchHousings from '../hooks/useFetchHousings'
 import CardList from '../components/CardList'
 
 function Home() {
-    const [housings, setHousings] = useState([])
-
-    useEffect(() => {
-        fetch('/data/properties.json')
-            .then((response) => {
-                if (!response.ok) {
-                    throw new Error(`Status ${response.status}`)
-                }
-                return response.json()
-            })
-            .then((data) => {
-                setHousings(data)
-            })
-            .catch((error) => {
-                console.error('Logements indisponibles :', error.message)
-            })
-    }, [])
+    const housings = useFetchHousings()
 
     return (
         <>
