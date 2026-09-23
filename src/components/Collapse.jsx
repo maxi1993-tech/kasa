@@ -7,7 +7,7 @@ function Collapse({ title, description }) {
     return (
         <section className={open ? "collapse collapse--open" : "collapse"}>
             <h2 className="collapse__title">
-                <button className="collapse__button" type="button" onClick={() => setOpen(!open)}>{title}
+                <button className="collapse__button" type="button" onClick={() => setOpen((current) => (!current))}>{title}
                     <img className="collapse__arrow" src={arrowUp} alt="" />
                 </button>
             </h2>
@@ -17,3 +17,4 @@ function Collapse({ title, description }) {
 }
 
 export default Collapse
+
