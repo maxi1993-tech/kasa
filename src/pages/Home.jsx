@@ -8,9 +8,17 @@ function Home() {
 
     useEffect(() => {
         fetch('/data/properties.json')
-            .then((response) => response.json())
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error(`Status ${response.status}`)
+                }
+                return response.json()
+            })
             .then((data) => {
                 setHousings(data)
+            })
+            .catch((error) => {
+                console.error('Logements indisponibles :', error.message)
             })
     }, [])
 
