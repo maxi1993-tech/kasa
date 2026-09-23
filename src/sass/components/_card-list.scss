@@ -1,7 +1,7 @@
 @use '../abstracts/variables' as *;
 @use '../abstracts/mixins' as *;
 
-.cardList {
+.card-list {
     display: grid;
     grid-template-columns:
         repeat(auto-fit, minmax(min(100%, $gallery-card-min-width), 1fr));
