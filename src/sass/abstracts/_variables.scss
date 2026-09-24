@@ -107,9 +107,7 @@ $collapse-content-vertical-padding: 1.25rem;
 // ---------------------------------------------------------
 // FICHE LOGEMENT / CARROUSEL
 // ---------------------------------------------------------
-// Hauteur fixe par maquette (brief : galerie de hauteur constante)
-$slideshow-height-mobile: 15.9375rem;
-$slideshow-height-desktop: 25.9375rem;
+$slideshow-height: fluid(255, 415);
 $slideshow-overlay: rgba(0, 0, 0, 0.3);
 $slideshow-count-position: 1.5625rem;
 $slideshow-arrow-width: fluid(24, 96);

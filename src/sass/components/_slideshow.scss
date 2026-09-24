@@ -2,14 +2,10 @@
 @use "../abstracts/mixins" as *;
 
 .slideshow {
-    height: $slideshow-height-mobile;
+    height: $slideshow-height;
     border-radius: $border-radius-large;
     overflow: hidden;
     position: relative;
-
-    @include respond-to($breakpoint-desktop) {
-        height: $slideshow-height-desktop;
-    }
 
     &__img {
         width: 100%;
