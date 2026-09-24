@@ -105,32 +105,57 @@ $collapse-content-horizontal-padding: 1.25rem;
 $collapse-content-vertical-padding: 1.25rem;
 
 // ---------------------------------------------------------
-// FICHE LOGEMENT / CARROUSEL
+// CARROUSEL
 // ---------------------------------------------------------
 $slideshow-height: fluid(255, 415);
 $slideshow-overlay: rgba(0, 0, 0, 0.3);
 $slideshow-count-position: 1.5625rem;
 $slideshow-arrow-width: fluid(24, 96);
-$slideshow-housing-info-gap: fluid(15, 30);
+
+// ---------------------------------------------------------
+// FICHE LOGEMENT — INFORMATIONS
+// ---------------------------------------------------------
+$housing-info-top-gap: fluid(15, 30);
+$housing-info-column-gap: 1.6875rem;
 
 $font-size-housing-title: fluid(18, 36);
-$font-size-location: fluid(14, 18);
-$housing-title-tags-gap: fluid(10, 20);
-$font-size-tag: fluid(10, 14);
-$housing-tag-gap: 0.625rem;
+$font-size-housing-location: fluid(14, 18);
 
+// ---------------------------------------------------------
+// FICHE LOGEMENT — TAGS
+// ---------------------------------------------------------
+$housing-tags-top-gap: fluid(10, 20);
+$housing-tags-gap: 0.625rem;
+
+$font-size-housing-tag: fluid(10, 14);
+$housing-tag-min-height: 1.5625rem;
+$housing-tag-padding: 0.25rem 1rem;
+
+// ---------------------------------------------------------
+// FICHE LOGEMENT — HÔTE ET NOTE
+// ---------------------------------------------------------
+$housing-meta-gap: 1rem;
+$housing-meta-gap-desktop: 1.6875rem;
+$housing-meta-padding-mobile: 0.9375rem 0;
+$housing-meta-padding-desktop: 0 0 1.875rem;
+
+$font-size-host-name: $font-size-body;
 $host-avatar-size: fluid(32, 64);
-// Figma 11 → 10px : écart ≤ 4px, valeur mobile fixe
+
+// Maquettes : 11 → 10px ; valeur mobile conservée.
 $host-name-avatar-gap: 0.6875rem;
 $color-host-placeholder: #c4c4c4;
 
-$rating-star-size-desktop: 2.25rem;
+$rating-star-size: fluid(18, 36);
+$rating-star-gap-mobile: 0.125rem;
 $rating-star-gap-desktop: 0.25rem;
 $color-rating-inactive: #e3e3e3;
 
-$housing-collapse-max-width: 36.375rem;
-$housing-details-row-gap: 1.25rem;
-$housing-details-column-gap-desktop: 4.75rem;
+// ---------------------------------------------------------
+// FICHE LOGEMENT — COLLAPSES
+// ---------------------------------------------------------
+$housing-collapses-row-gap: 1.25rem;
+$housing-collapses-column-gap: 4rem;
 
 // ---------------------------------------------------------
 // PAGE 404

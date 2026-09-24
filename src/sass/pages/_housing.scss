@@ -1,0 +1,111 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.housing {
+    margin-top: $housing-info-top-gap;
+
+    @include respond-to($breakpoint-desktop) {
+        display: flex;
+        justify-content: space-between;
+        gap: $housing-info-column-gap;
+    }
+
+    &__title {
+        font-size: $font-size-housing-title;
+        color: $color-primary;
+        font-weight: $font-weight-medium;
+    }
+
+    &__location {
+        font-size: $font-size-housing-location;
+        font-weight: $font-weight-medium;
+    }
+
+    &__tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: $housing-tags-gap;
+        margin-top: $housing-tags-top-gap;
+    }
+
+    &__tag {
+        display: grid;
+        place-items: center;
+        min-height: $housing-tag-min-height;
+        padding: $housing-tag-padding;
+        color: $color-white;
+        background-color: $color-primary;
+        font-size: $font-size-housing-tag;
+        font-weight: $font-weight-bold;
+        border-radius: $border-radius-small;
+        text-align: center;
+
+        @include respond-to($breakpoint-desktop) {
+            border-radius: $border-radius-medium;
+        }
+    }
+
+    &__meta {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: $housing-meta-gap;
+        padding: $housing-meta-padding-mobile;
+
+        @include respond-to($breakpoint-desktop) {
+            flex-direction: column-reverse;
+            align-items: flex-end;
+            gap: $housing-meta-gap-desktop;
+            padding: $housing-meta-padding-desktop;
+        }
+    }
+
+    &__host {
+        display: flex;
+        align-items: center;
+        gap: $host-name-avatar-gap;
+        margin: 0;
+    }
+
+    &__hostname {
+        font-size: $font-size-host-name;
+        color: $color-primary;
+        font-weight: $font-weight-medium;
+        text-align: right;
+    }
+
+    &__avatar {
+        width: $host-avatar-size;
+        height: $host-avatar-size;
+        object-fit: cover;
+        border-radius: $border-radius-circle;
+    }
+
+    &__ratings {
+        display: flex;
+        gap: $rating-star-gap-mobile;
+
+        @include respond-to($breakpoint-desktop) {
+            gap: $rating-star-gap-desktop;
+        }
+    }
+
+    &__star {
+        width: $rating-star-size;
+    }
+
+    &__collapses {
+        display: flex;
+        flex-direction: column;
+        gap: $housing-collapses-row-gap;
+
+        @include respond-to($breakpoint-desktop) {
+            flex-direction: row;
+            gap: $housing-collapses-column-gap;
+        }
+    }
+
+    &__collapse {
+        width: 100%;
+    }
+}

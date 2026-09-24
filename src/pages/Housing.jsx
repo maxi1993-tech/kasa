@@ -28,7 +28,7 @@ function Housing() {
                     <p className="housing__location">{housing.location}</p>
                     <ul className="housing__tags">
                         {housing.tags.map((tag) => (
-                            <li key={tag}>{tag}</li>
+                            <li className="housing__tag" key={tag}>{tag}</li>
                         ))}
                     </ul>
                 </div>
@@ -44,13 +44,19 @@ function Housing() {
                         <img className="housing__avatar" src={housing.host.picture} alt="" />
                     </figure>
                 </div>
-                <Collapse title="Description" description={housing.description} />
-                <Collapse title="Équipements" description={<ul>
-                    {housing.equipments.map((equipment) => (
-                        <li key={equipment}>{equipment}</li>
-                    ))}
-                </ul>} />
             </section>
+            <div className="housing__collapses">
+                <div className="housing__collapse">
+                    <Collapse title="Description" description={housing.description} />
+                </div>
+                <div className="housing__collapse">
+                    <Collapse title="Équipements" description={<ul>
+                        {housing.equipments.map((equipment) => (
+                            <li key={equipment}>{equipment}</li>
+                        ))}
+                    </ul>} />
+                </div>
+            </div>
         </>
     )
 }
