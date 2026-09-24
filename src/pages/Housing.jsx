@@ -1,5 +1,7 @@
 import { useParams } from "react-router"
 import useFetchHousings from '../hooks/useFetchHousings'
+import Slideshow from '../components/Slideshow'
+
 
 function Housing() {
 
@@ -7,14 +9,16 @@ function Housing() {
     const housings = useFetchHousings()
 
     const housing = housings.find((item) => item.id === id)
-    console.log(housings)
 
     if (!housing) {
         return null
     }
 
     return (
-        <h1>{housing.title}</h1>
+        <>
+            <Slideshow pictures={housing.pictures} />
+            <h1>{housing.title}</h1>
+        </>
     )
 }
 export default Housing
