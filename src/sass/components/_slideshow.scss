@@ -1,0 +1,59 @@
+@use '../abstracts/variables' as *;
+@use "../abstracts/mixins" as *;
+
+.slideshow {
+    height: $carousel-height-mobile;
+    border-radius: $border-radius-large;
+    overflow: hidden;
+    position: relative;
+
+    @include respond-to($breakpoint-desktop) {
+        height: $carousel-height-desktop;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__left,
+    &__right {
+        width: $carousel-arrow-width;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__left {
+        left: 0;
+    }
+
+    &__right {
+        right: 0;
+    }
+
+    &__count {
+        display: none;
+    }
+
+    @include respond-to($breakpoint-desktop) {
+        &__count {
+            display: block;
+            color: $color-white;
+            font-size: 1.125rem;
+            position: absolute;
+            bottom: $carousel-count-position;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: $carousel-overlay;
+        pointer-events: none;
+    }
+}
