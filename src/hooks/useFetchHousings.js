@@ -4,7 +4,7 @@ function useFetchHousings() {
     const [housings, setHousings] = useState([])
 
     useEffect(() => {
-        fetch('/data/properties.json')
+        fetch(`${import.meta.env.BASE_URL}data/properties.json`)
             .then((response) => {
                 if (!response.ok) {
                     throw new Error(`Status ${response.status}`)
