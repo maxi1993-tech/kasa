@@ -108,12 +108,12 @@ $collapse-content-vertical-padding: 1.25rem;
 // FICHE LOGEMENT / CARROUSEL
 // ---------------------------------------------------------
 // Hauteur fixe par maquette (brief : galerie de hauteur constante)
-$carousel-height-mobile: 15.9375rem;
-$carousel-height-desktop: 25.9375rem;
-$carousel-overlay: rgba(0, 0, 0, 0.3);
-$carousel-count-position: 1.5625rem;
-$carousel-arrow-width: fluid(24, 96);
-$carousel-housing-info-gap: fluid(15, 30);
+$slideshow-height-mobile: 15.9375rem;
+$slideshow-height-desktop: 25.9375rem;
+$slideshow-overlay: rgba(0, 0, 0, 0.3);
+$slideshow-count-position: 1.5625rem;
+$slideshow-arrow-width: fluid(24, 96);
+$slideshow-housing-info-gap: fluid(15, 30);
 
 $font-size-housing-title: fluid(18, 36);
 $font-size-location: fluid(14, 18);
