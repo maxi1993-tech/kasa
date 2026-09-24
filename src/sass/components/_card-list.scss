@@ -4,13 +4,13 @@
 .card-list {
     display: grid;
     grid-template-columns:
-        repeat(auto-fit, minmax(min(100%, $gallery-card-min-width), 1fr));
-    gap: $gallery-row-gap $gallery-column-gap;
+        repeat(auto-fit, minmax(min(100%, $gallery-card-min), 1fr));
+    gap: $gallery-gap-y $gallery-gap-x;
     padding: $gallery-padding;
-    margin-top: $home-banner-gallery-gap;
+    margin-top: $gallery-top;
 
     @include respond-to($breakpoint-desktop) {
         background-color: $color-background-light;
-        border-radius: $border-radius-large;
+        border-radius: $radius-large;
     }
 }

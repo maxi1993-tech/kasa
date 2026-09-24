@@ -6,7 +6,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: $footer-content-gap;
+    gap: $space-20;
     min-height: $footer-min-height;
     background-color: $color-black;
     color: $color-white;
@@ -19,7 +19,7 @@
     }
 
     &__text {
-        font-size: $font-size-footer;
+        font-size: $footer-font-size;
     }
 
     &__line-break {

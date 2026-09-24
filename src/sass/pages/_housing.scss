@@ -2,46 +2,46 @@
 @use '../abstracts/mixins' as *;
 
 .housing {
-    margin-top: $housing-info-top-gap;
+    margin-top: $housing-top;
 
     @include respond-to($breakpoint-desktop) {
         display: flex;
         justify-content: space-between;
-        gap: $housing-info-column-gap;
+        gap: $space-27;
     }
 
     &__title {
-        font-size: $font-size-housing-title;
+        font-size: $housing-font-size;
         color: $color-primary;
         font-weight: $font-weight-medium;
     }
 
     &__location {
-        font-size: $font-size-housing-location;
+        font-size: $location-font-size;
         font-weight: $font-weight-medium;
     }
 
     &__tags {
         display: flex;
         flex-wrap: wrap;
-        gap: $housing-tags-gap;
-        margin-top: $housing-tags-top-gap;
+        gap: $space-10;
+        margin-top: $tags-top;
     }
 
     &__tag {
         display: grid;
         place-items: center;
-        min-height: $housing-tag-min-height;
-        padding: $housing-tag-padding;
+        min-height: $tag-min-height;
+        padding: $space-4 $space-16;
         color: $color-white;
         background-color: $color-primary;
-        font-size: $font-size-housing-tag;
+        font-size: $tag-font-size;
         font-weight: $font-weight-bold;
-        border-radius: $border-radius-small;
+        border-radius: $radius-small;
         text-align: center;
 
         @include respond-to($breakpoint-desktop) {
-            border-radius: $border-radius-medium;
+            border-radius: $radius-medium;
         }
     }
 
@@ -49,26 +49,26 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: $housing-meta-gap;
-        padding: $housing-meta-padding-mobile;
+        gap: $space-16;
+        padding: $space-15 0;
 
         @include respond-to($breakpoint-desktop) {
             flex-direction: column-reverse;
             align-items: flex-end;
-            gap: $housing-meta-gap-desktop;
-            padding: $housing-meta-padding-desktop;
+            gap: $space-27;
+            padding: 0 0 $space-30;
         }
     }
 
     &__host {
         display: flex;
         align-items: center;
-        gap: $host-name-avatar-gap;
+        gap: $space-11;
         margin: 0;
     }
 
     &__hostname {
-        font-size: $font-size-host-name;
+        font-size: $host-font-size;
         color: $color-primary;
         font-weight: $font-weight-medium;
         text-align: right;
@@ -78,30 +78,30 @@
         width: $host-avatar-size;
         height: $host-avatar-size;
         object-fit: cover;
-        border-radius: $border-radius-circle;
+        border-radius: $radius-circle;
     }
 
     &__ratings {
         display: flex;
-        gap: $rating-star-gap-mobile;
+        gap: $space-2;
 
         @include respond-to($breakpoint-desktop) {
-            gap: $rating-star-gap-desktop;
+            gap: $space-4;
         }
     }
 
     &__star {
-        width: $rating-star-size;
+        width: $star-size;
     }
 
     &__collapses {
         display: flex;
         flex-direction: column;
-        gap: $housing-collapses-row-gap;
+        gap: $space-20;
 
         @include respond-to($breakpoint-desktop) {
             flex-direction: row;
-            gap: $housing-collapses-column-gap;
+            gap: $space-64;
         }
     }
 

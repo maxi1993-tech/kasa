@@ -1,175 +1,116 @@
 @use 'functions' as *;
 
-// ---------------------------------------------------------
-// BREAKPOINTS
-// ---------------------------------------------------------
+// Breakpoints
 $breakpoint-mobile-large: 425px;
 $breakpoint-desktop: 1440px;
 
-// ---------------------------------------------------------
-// COULEURS
-// ---------------------------------------------------------
+// Couleurs
 $color-primary: #ff6060;
 $color-white: #ffffff;
 $color-black: #000000;
 $color-background-light: #f6f6f6;
-$color-background-light-transparent: rgba(246, 246, 246, 0.45);
 
-// ---------------------------------------------------------
-// TYPOGRAPHIE
-// ---------------------------------------------------------
+// Typographie
 $font-family-primary: 'Montserrat', sans-serif;
 $font-weight-regular: 400;
 $font-weight-medium: 500;
 $font-weight-bold: 700;
 $line-height-default: 1.426;
-$line-height-banner-mobile: 1;
+$line-height-tight: 1;
 $font-size-body: fluid(12, 18);
 
-// ---------------------------------------------------------
-// BORDURES ARRONDIES
-// ---------------------------------------------------------
-$border-radius-small: 0.3125rem;
-$border-radius-medium: 0.625rem;
-$border-radius-large: fluid(10, 25);
-$border-radius-circle: 50%;
+// Arrondis
+$radius-small: 0.3125rem;
+$radius-medium: 0.625rem;
+$radius-large: fluid(10, 25);
+$radius-circle: 50%;
 
-// ---------------------------------------------------------
-// HEADER
-// ---------------------------------------------------------
+// Espacements fixes (nom = valeur en px, base 16px)
+$space-2: 0.125rem;
+$space-4: 0.25rem;
+$space-10: 0.625rem;
+$space-11: 0.6875rem;
+$space-15: 0.9375rem;
+$space-16: 1rem;
+$space-20: 1.25rem;
+$space-25: 1.5625rem;
+$space-27: 1.6875rem;
+$space-30: 1.875rem;
+$space-64: 4rem;
+$space-110: 6.875rem;
+$space-139: 8.6875rem;
+
+// Page
+// Côtés : 20px à 375px, 100px à 1440px, 16px minimum sous 375px
+$page-padding-x: clamp(1rem, calc(-0.5105633803rem + 7.5117370892vw), 6.25rem);
+$main-padding: 0 $page-padding-x fluid(27, 50);
+
+// Header
 $header-logo-width: fluid(145, 210);
-$font-size-navigation: fluid(12, 24);
+$header-font-size: fluid(12, 24);
+$header-padding: fluid(20, 45) $page-padding-x fluid(27, 50);
+// Menu : 8px à 320px, 26px à 375px, 57px à 1440px (deux pentes)
+$header-gap: clamp(0.5rem,
+                min(calc(0.9428rem + 2.911vw), calc(-6.0455rem + 32.727vw)),
+                3.5625rem);
 
-// Deux pentes : 8px à 320px, 26px à 375px, 57px à 1440px
-$header-navigation-gap: clamp(0.5rem,
-        min(calc(0.9428rem + 2.911vw), calc(-6.0455rem + 32.727vw)),
-        3.5625rem);
-
-// Côtés du Header et du main : 20 → 100px, 16px minimum sous 375px
-$page-horizontal-padding: clamp(1rem, calc(-0.5105633803rem + 7.5117370892vw), 6.25rem);
-
-$header-padding: fluid(20, 45) $page-horizontal-padding fluid(27, 50);
-
-// ---------------------------------------------------------
-// MAIN
-// ---------------------------------------------------------
-$main-padding: 0 $page-horizontal-padding fluid(27, 50);
-
-// ---------------------------------------------------------
-// BANNIÈRES
-// ---------------------------------------------------------
+// Bannières
 $banner-height: fluid(111, 223);
-$font-size-banner-title: fluid(24, 48);
-$home-banner-overlay: rgba(0, 0, 0, 0.6);
-$about-banner-overlay: rgba(0, 0, 0, 0.3);
+$banner-font-size: fluid(24, 48);
+$banner-image-width: fluid(552.75, 1240); // Image d'accueil
+$banner-position: 60% 48%;
+$home-overlay: rgba(0, 0, 0, 0.6);
+$about-overlay: rgba(0, 0, 0, 0.3);
 
-// Largeur de l'image, utilisée dans max(100%, …) par le Banner
-$home-banner-background-size: fluid(552.75, 1240);
-$home-banner-background-position: 60% 48%;
-
-// ---------------------------------------------------------
-// GALERIE / CARTES ACCUEIL
-// ---------------------------------------------------------
-$home-banner-gallery-gap: fluid(22, 43);
+// Galerie
+$gallery-top: fluid(22, 43);
 $gallery-padding: fluid(0, 56) fluid(0, 50) fluid(0, 43);
-$gallery-column-gap: fluid(20, 60);
-$gallery-row-gap: fluid(20, 50);
+$gallery-gap-x: fluid(20, 60); // Colonnes
+$gallery-gap-y: fluid(20, 50); // Lignes
+$gallery-card-min: 17.5rem;
 
-$gallery-card-min-width: 17.5rem;
-$housing-card-max-width: 21.25rem;
-$housing-card-height: fluid(255, 340);
+// Cartes
+$card-height: fluid(255, 340);
+$card-font-size: 1.125rem;
+$card-title-bottom: fluid(15, 20);
+$card-gradient: linear-gradient(180deg,
+                rgba(255, 255, 255, 0) 0%,
+                rgba(10, 10, 10, 0) 42%,
+                rgba(4, 4, 4, 0.41) 100%);
 
-$card-image-gradient: linear-gradient(180deg,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(10, 10, 10, 0) 42%,
-        rgba(4, 4, 4, 0.41) 100%);
+// À propos
+$about-max-width: 63.9375rem;
+$about-top: fluid(19, 38);
+$about-gap: fluid(20, 30);
 
-$font-size-card-title: 1.125rem;
-$housing-card-title-horizontal-padding: 1.25rem;
-$housing-card-title-bottom-position: fluid(15, 20);
+// Collapses
+$collapse-min-height: fluid(30, 52);
+$collapse-padding-x: fluid(10, 20); // Bouton
+$collapse-font-size: fluid(13, 24);
 
-// ---------------------------------------------------------
-// À PROPOS
-// ---------------------------------------------------------
-$about-content-max-width: 63.9375rem;
-$about-section-gap: fluid(19, 38);
-$about-collapse-gap: fluid(20, 30);
-
-// ---------------------------------------------------------
-// COLLAPSE
-// ---------------------------------------------------------
-$collapse-header-min-height: fluid(30, 52);
-$collapse-header-horizontal-padding: fluid(10, 20);
-$font-size-collapse-title: fluid(13, 24);
-$collapse-content-horizontal-padding: 1.25rem;
-$collapse-content-vertical-padding: 1.25rem;
-
-// ---------------------------------------------------------
-// CARROUSEL
-// ---------------------------------------------------------
+// Carrousel
 $slideshow-height: fluid(255, 415);
 $slideshow-overlay: rgba(0, 0, 0, 0.3);
-$slideshow-count-position: 1.5625rem;
 $slideshow-arrow-width: fluid(24, 96);
+$slideshow-font-size: 1.125rem; // Compteur
 
-// ---------------------------------------------------------
-// FICHE LOGEMENT — INFORMATIONS
-// ---------------------------------------------------------
-$housing-info-top-gap: fluid(15, 30);
-$housing-info-column-gap: 1.6875rem;
-
-$font-size-housing-title: fluid(18, 36);
-$font-size-housing-location: fluid(14, 18);
-
-// ---------------------------------------------------------
-// FICHE LOGEMENT — TAGS
-// ---------------------------------------------------------
-$housing-tags-top-gap: fluid(10, 20);
-$housing-tags-gap: 0.625rem;
-
-$font-size-housing-tag: fluid(10, 14);
-$housing-tag-min-height: 1.5625rem;
-$housing-tag-padding: 0.25rem 1rem;
-
-// ---------------------------------------------------------
-// FICHE LOGEMENT — HÔTE ET NOTE
-// ---------------------------------------------------------
-$housing-meta-gap: 1rem;
-$housing-meta-gap-desktop: 1.6875rem;
-$housing-meta-padding-mobile: 0.9375rem 0;
-$housing-meta-padding-desktop: 0 0 1.875rem;
-
-$font-size-host-name: $font-size-body;
+// Fiche logement
+$housing-top: fluid(15, 30); // Après le carrousel
+$housing-font-size: fluid(18, 36); // Titre
+$location-font-size: fluid(14, 18);
+$tags-top: fluid(10, 20);
+$tag-font-size: fluid(10, 14);
+$tag-min-height: 1.5625rem;
+$host-font-size: $font-size-body;
 $host-avatar-size: fluid(32, 64);
+$star-size: fluid(18, 36);
 
-// Maquettes : 11 → 10px ; valeur mobile conservée.
-$host-name-avatar-gap: 0.6875rem;
-$color-host-placeholder: #c4c4c4;
+// Page 404
+$error-font-size: fluid(96, 288); // Nombre « 404 »
+$error-text-size: fluid(18, 36);
+$error-link-size: fluid(14, 18);
 
-$rating-star-size: fluid(18, 36);
-$rating-star-gap-mobile: 0.125rem;
-$rating-star-gap-desktop: 0.25rem;
-$color-rating-inactive: #e3e3e3;
-
-// ---------------------------------------------------------
-// FICHE LOGEMENT — COLLAPSES
-// ---------------------------------------------------------
-$housing-collapses-row-gap: 1.25rem;
-$housing-collapses-column-gap: 4rem;
-
-// ---------------------------------------------------------
-// PAGE 404
-// ---------------------------------------------------------
-$font-size-error-code: fluid(96, 288);
-$font-size-error-message: fluid(18, 36);
-$error-message-max-width: fluid(260, 872);
-$font-size-error-link: fluid(14, 18);
-
-// ---------------------------------------------------------
-// FOOTER
-// ---------------------------------------------------------
+// Footer
 $footer-min-height: 13.0625rem;
 $footer-logo-width: 7.625rem;
-$footer-content-gap: 1.25rem;
-$footer-text-max-width-mobile: 8.375rem;
-$font-size-footer: fluid(12, 24);
+$footer-font-size: fluid(12, 24);

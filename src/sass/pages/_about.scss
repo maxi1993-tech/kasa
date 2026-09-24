@@ -3,8 +3,8 @@
 .about-collapses {
     display: flex;
     flex-direction: column;
-    gap: $about-collapse-gap;
-    max-width: $about-content-max-width;
+    gap: $about-gap;
+    max-width: $about-max-width;
     margin: 0 auto;
-    margin-top: $about-section-gap;
+    margin-top: $about-top;
 }

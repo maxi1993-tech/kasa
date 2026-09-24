@@ -11,18 +11,18 @@
     margin-top: 110px;
 
     &__title {
-        font-size: $font-size-error-code;
+        font-size: $error-font-size;
         font-weight: $font-weight-bold;
-        line-height: $line-height-banner-mobile;
+        line-height: $line-height-tight;
     }
 
     &__text {
-        font-size: $font-size-error-message;
+        font-size: $error-text-size;
     }
 
     &__link {
         color: $color-black;
-        font-size: $font-size-error-link;
+        font-size: $error-link-size;
         text-decoration: underline;
     }
 }

@@ -4,15 +4,15 @@
     &__link {
         position: relative;
         display: block;
-        height: $housing-card-height;
+        height: $card-height;
         overflow: hidden;
-        border-radius: $border-radius-medium;
+        border-radius: $radius-medium;
 
         &::after {
             content: "";
             position: absolute;
             inset: 0;
-            background: $card-image-gradient;
+            background: $card-gradient;
             pointer-events: none;
         }
     }
@@ -29,8 +29,8 @@
         position: absolute;
         inset: auto 0 0;
         z-index: 1;
-        padding: 0 $housing-card-title-horizontal-padding $housing-card-title-bottom-position;
+        padding: 0 $space-20 $card-title-bottom;
         color: $color-white;
-        font-size: $font-size-card-title;
+        font-size: $card-font-size;
     }
 }

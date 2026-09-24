@@ -8,11 +8,11 @@
         justify-content: space-between;
         width: 100%;
         background-color: $color-primary;
-        min-height: $collapse-header-min-height;
-        padding: 0 $collapse-header-horizontal-padding;
-        border-radius: $border-radius-small;
+        min-height: $collapse-min-height;
+        padding: 0 $collapse-padding-x;
+        border-radius: $radius-small;
         color: $color-white;
-        font-size: $font-size-collapse-title;
+        font-size: $collapse-font-size;
         font-weight: $font-weight-bold;
     }
 
@@ -23,7 +23,7 @@
     &__content {
         max-height: 0;
         overflow: hidden;
-        padding: 0 $collapse-content-horizontal-padding;
+        padding: 0 $space-20;
         background-color: $color-background-light;
         font-size: $font-size-body;
         font-weight: $font-weight-regular;
@@ -34,7 +34,7 @@
 
     &--open &__content {
         max-height: 1000px;
-        padding: $collapse-content-vertical-padding $collapse-content-horizontal-padding;
+        padding: $space-20 $space-20;
     }
 
     &--open &__arrow {

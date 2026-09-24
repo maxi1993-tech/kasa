@@ -3,7 +3,7 @@
 
 .slideshow {
     height: $slideshow-height;
-    border-radius: $border-radius-large;
+    border-radius: $radius-large;
     overflow: hidden;
     position: relative;
 
@@ -39,7 +39,7 @@
             color: $color-white;
             font-size: 1.125rem;
             position: absolute;
-            bottom: $slideshow-count-position;
+            bottom: $space-25;
             left: 50%;
             transform: translateX(-50%);
         }

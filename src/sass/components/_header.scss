@@ -13,11 +13,11 @@
 
     &__list {
         display: flex;
-        gap: $header-navigation-gap;
+        gap: $header-gap;
     }
 
     &__link {
-        font-size: $font-size-navigation;
+        font-size: $header-font-size;
         font-weight: $font-weight-medium;
         text-transform: uppercase;
 
