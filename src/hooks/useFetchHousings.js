@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 
 function useFetchHousings() {
     const [housings, setHousings] = useState([])
+    const [isLoading, setIsLoading] = useState(true)
 
     useEffect(() => {
         fetch(`${import.meta.env.BASE_URL}data/properties.json`)
@@ -13,12 +14,14 @@ function useFetchHousings() {
             })
             .then((data) => {
                 setHousings(data)
+                setIsLoading(false)
             })
             .catch((error) => {
+                setIsLoading(false)
                 console.error('Logements indisponibles :', error.message)
             })
     }, [])
-    return housings
+    return { housings, isLoading }
 }
 
 export default useFetchHousings

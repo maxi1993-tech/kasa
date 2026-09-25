@@ -4,7 +4,7 @@ import useFetchHousings from '../hooks/useFetchHousings'
 import CardList from '../components/CardList'
 
 function Home() {
-    const housings = useFetchHousings()
+    const { housings } = useFetchHousings()
 
     return (
         <>

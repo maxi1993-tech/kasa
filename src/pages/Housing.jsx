@@ -1,4 +1,4 @@
-import { useParams } from "react-router"
+import { useParams, Navigate } from "react-router"
 import useFetchHousings from "../hooks/useFetchHousings"
 import Slideshow from "../components/Slideshow"
 import starActive from "../assets/star-active.svg"
@@ -7,17 +7,19 @@ import Collapse from "../components/Collapse"
 
 
 function Housing() {
-
+    const { housings, isLoading } = useFetchHousings()
     const { id } = useParams()
-    const housings = useFetchHousings()
-
     const housing = housings.find((item) => item.id === id)
-
     const stars = [1, 2, 3, 4, 5]
 
-    if (!housing) {
+    if (isLoading) {
         return null
     }
+
+    if (!housing) {
+        return <Navigate replace to="/*" />
+    }
+
 
     return (
         <>
