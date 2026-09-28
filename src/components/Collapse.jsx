@@ -1,5 +1,5 @@
-import { useState } from "react";
-import arrowUp from "../assets/icon-arrow-up.svg"
+import { useState } from 'react';
+import arrowUp from '../assets/icon-arrow-up.svg'
 
 function Collapse({ title, description }) {
     const [open, setOpen] = useState(false)

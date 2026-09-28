@@ -1,5 +1,5 @@
-import Collapse from "../components/Collapse"
-import Banner from "../components/Banner"
+import Collapse from '../components/Collapse'
+import Banner from '../components/Banner'
 import imgBanner from '../assets/banner-about.webp'
 
 const dataCollapses = [

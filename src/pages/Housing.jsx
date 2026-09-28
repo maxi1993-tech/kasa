@@ -1,9 +1,9 @@
-import { useParams, Navigate } from "react-router"
-import useFetchHousings from "../hooks/useFetchHousings"
-import Slideshow from "../components/Slideshow"
-import starActive from "../assets/star-active.svg"
-import starInactive from "../assets/star-inactive.svg"
-import Collapse from "../components/Collapse"
+import { useParams, Navigate } from 'react-router'
+import useFetchHousings from '../hooks/useFetchHousings'
+import Slideshow from '../components/Slideshow'
+import starActive from '../assets/star-active.svg'
+import starInactive from '../assets/star-inactive.svg'
+import Collapse from '../components/Collapse'
 
 
 function Housing() {

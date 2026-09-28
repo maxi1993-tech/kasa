@@ -1,5 +1,5 @@
 import imgBanner from '../assets/banner-home.webp'
-import Banner from "../components/Banner"
+import Banner from '../components/Banner'
 import useFetchHousings from '../hooks/useFetchHousings'
 import CardList from '../components/CardList'
 
