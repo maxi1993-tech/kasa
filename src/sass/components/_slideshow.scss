@@ -37,7 +37,7 @@
         &__count {
             display: block;
             color: $color-white;
-            font-size: 1.125rem;
+            font-size: $slideshow-font-size;
             position: absolute;
             bottom: $space-25;
             left: 50%;

@@ -5,10 +5,10 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap: 139px;
+    gap: $space-139;
     color: $color-primary;
     font-weight: $font-weight-medium;
-    margin-top: 110px;
+    margin-top: $space-110;
 
     &__title {
         font-size: $error-font-size;
