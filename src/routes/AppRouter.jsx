@@ -5,6 +5,10 @@ import About from '../pages/About';
 import NotFound from '../pages/NotFound';
 import Layout from '../components/Layout';
 
+/**
+ * Routes de l'application : 4 routes imbriquées dans Layout, qui affiche Header et Footer autour de chaque page ; la route * affiche NotFound pour toute adresse inconnue.
+ * @returns {JSX.Element}
+ */
 function AppRouter() {
 
     return (

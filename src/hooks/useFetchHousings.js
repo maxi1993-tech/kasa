@@ -1,5 +1,9 @@
 import { useState, useEffect } from 'react'
 
+/**
+ * Charge les logements depuis properties.json au premier affichage ; isLoading passe à false à la fin du chargement, réussi ou pas.
+ * @returns {{ housings: Object[], isLoading: boolean }}
+ */
 function useFetchHousings() {
     const [housings, setHousings] = useState([])
     const [isLoading, setIsLoading] = useState(true)

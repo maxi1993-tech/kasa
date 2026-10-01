@@ -5,7 +5,10 @@ import starActive from '../assets/star-active.svg'
 import starInactive from '../assets/star-inactive.svg'
 import Collapse from '../components/Collapse'
 
-
+/**
+ * Page d'un logement : lit l'id dans l'adresse avec useParams(), puis pendant le chargement n'affiche rien, si l'id est introuvable redirige vers /404, sinon affiche la fiche logement.
+ * @returns {JSX.Element|null}
+ */
 function Housing() {
     const { housings, isLoading } = useFetchHousings()
     const { id } = useParams()

@@ -1,5 +1,9 @@
 import logoFooter from '../assets/logo-footer.svg'
 
+/**
+ * Pied de page : affiche le logo et le copyright.
+ * @returns {JSX.Element}
+ */
 function Footer() {
 
     return (

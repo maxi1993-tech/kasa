@@ -2,6 +2,12 @@ import arrowLeft from '../assets/arrow-slideshow-left.svg'
 import arrowRight from '../assets/arrow-slideshow-right.svg'
 import { useState } from 'react'
 
+/**
+ * Galerie d'images d'un logement : les flèches passent d'une image à l'autre en boucle, avec la numérotation ; flèches et numérotation cachées si une seule image.
+ * @param {Object} props
+ * @param {string[]} props.pictures - tableaux des images du slideshow
+ * @returns {JSX.Element}
+ */
 function Slideshow({ pictures }) {
 
     const [index, setIndex] = useState(0)

@@ -1,6 +1,9 @@
 import { Link } from 'react-router'
 
-
+/**
+ * Page d'erreur 404 : s'affiche pour une adresse inconnue ou un logement inexistant, avec un lien vers l'accueil.
+ * @returns {JSX.Element}
+ */
 function NotFound() {
 
     return (

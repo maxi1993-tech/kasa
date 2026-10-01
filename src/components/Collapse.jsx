@@ -1,6 +1,13 @@
 import { useState } from 'react';
 import arrowUp from '../assets/icon-arrow-up.svg'
 
+/**
+ * Bloc repliable : affiche un titre, et le contenu s'ouvre ou se ferme au clic ; fermé par défaut.
+ * @param {Object} props
+ * @param {string} props.title - titre du collapse
+ * @param {React.ReactNode} props.description - contenu affiché à l'ouverture
+ * @returns {JSX.Element}
+ */
 function Collapse({ title, description }) {
     const [open, setOpen] = useState(false)
 

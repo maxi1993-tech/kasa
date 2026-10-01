@@ -1,6 +1,10 @@
 import { NavLink } from 'react-router'
 import logoHeader from '../assets/logo-header.svg'
 
+/**
+ * En-tête du site : affiche le logo et deux liens vers Accueil et À propos.
+ * @returns {JSX.Element}
+ */
 function Header() {
 
     return (

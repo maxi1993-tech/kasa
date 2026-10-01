@@ -3,6 +3,10 @@ import Banner from '../components/Banner'
 import useFetchHousings from '../hooks/useFetchHousings'
 import CardList from '../components/CardList'
 
+/**
+ * Page d'accueil : affiche la bannière et les logements chargés par useFetchHousings.
+ * @returns {JSX.Element}
+ */
 function Home() {
     const { housings } = useFetchHousings()
 

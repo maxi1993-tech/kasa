@@ -2,6 +2,10 @@ import Collapse from '../components/Collapse'
 import Banner from '../components/Banner'
 import imgBanner from '../assets/banner-about.webp'
 
+/**
+ * Textes des 4 Collapse d'À propos : un titre et une description par bloc.
+ * @type {Object[]}
+ */
 const dataCollapses = [
     {
         title: "Fiabilité",
@@ -21,6 +25,10 @@ const dataCollapses = [
     }
 ]
 
+/**
+ * Page À propos : affiche la bannière et un collapse par élément de dataCollapses.
+ * @returns {JSX.Element}
+ */
 function About() {
 
     return (

@@ -1,5 +1,11 @@
 import Card from './Card'
 
+/**
+ * Liste des logements : affiche une card par logement.
+ * @param {Object} props
+ * @param {Object[]} props.housings - tableau qui contient tous les logements
+ * @returns {JSX.Element}
+ */
 function CardList({ housings }) {
 
     return (
