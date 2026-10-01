@@ -17,7 +17,7 @@ function Housing() {
     }
 
     if (!housing) {
-        return <Navigate replace to="/*" />
+        return <Navigate replace to="/404" />
     }
 
 
