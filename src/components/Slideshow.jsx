@@ -5,7 +5,7 @@ import { useState } from 'react'
 /**
  * Galerie d'images d'un logement : les flèches passent d'une image à l'autre en boucle, avec la numérotation ; flèches et numérotation cachées si une seule image.
  * @param {Object} props
- * @param {string[]} props.pictures - tableaux des images du slideshow
+ * @param {string[]} props.pictures - adresses des images du logement
  * @returns {JSX.Element}
  */
 function Slideshow({ pictures }) {
